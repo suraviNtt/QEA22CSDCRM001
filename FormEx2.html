@@ -1,0 +1,52 @@
+<html>
+<head/>
+<body>
+<script>
+
+function validator(){
+
+var x = document.getElementById("u").value;
+// var y = document.getElementById("a").value;
+var z = document.getElementById("p").value;
+
+if(x == null || x == ""){
+	document.getElementById("er").innerHTML="Enter user name";
+}
+/*
+if(y < 18){
+	alert("You are not eligible");
+}
+*/
+if(z == null || z == ""){
+	alert("Enter password");
+}
+if(z.length < 4)
+	document.getElementById("erp").innerHTML="Please use more than 4 letters password ";
+
+}
+ </script>
+<h1>Lorem ipsum</h1>
+<h2>dolor sit amet, consectetur adipiscing elit</h2>
+<b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<br/>
+<br/>
+<div>
+<!-- <form onSubmit="validator()"> -->
+
+Username : <input type="text" id="u" />
+<span id="er" style="color : red"> </span>
+<!-- <br/>
+<br/>
+Age :<input type="text" id="a" /> -->
+<br/>
+<br/>
+Password : <input type="password" id="p"/>
+<span id="erp" style="color : red"> </span>
+
+<br/>
+<br/>
+<button onclick="validator()" value="Submit">Submit</button>
+<!-- </form> -->
+</div>
+</body>
+</html>

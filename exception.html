@@ -1,0 +1,20 @@
+<html>
+
+<head/>
+<body>
+
+<script>
+function error(){
+try{
+ var x = [ 10, 20 , 30]
+	document.write(x[3]);
+}catch(e){
+	console.log(e.description);
+}finally{
+	alert("Exception Handled");
+}
+}
+error();
+</script>
+</body>
+</html>
